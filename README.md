@@ -29,3 +29,13 @@ NP2: NIP2
 
 
 Referencing in issues is possible in the same way and makes it easy to do so.
+
+
+
+**If your issue is an NP update, submit a pull request or open an issue with the label**
+
+NP1: Update
+
+NP2: Update
+
+**and so on..**
