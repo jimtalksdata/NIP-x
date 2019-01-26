@@ -11,11 +11,16 @@ You can start a discussion or suggestion by opening an issue, if this repository
 **If your issue is a suggestion, please label your issue**
 
 Where NP x = the current protocol 'version'
+
 and NIP x = the next improvement number
 
 NP1: NIP1
+
 NP1: NIP2
+
 NP2: NIP1
+
 NP2: NIP2
+
 
 Referencing in issues is possible in the same way and makes it easy to do so.
