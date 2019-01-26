@@ -1,4 +1,4 @@
-# Nyzo improvement protocol 1 - NIP-1
+# Nyzo improvement protocol
 
 This is a frontrunner to the nyzo tech repository which at time of writing does not contain any information. All information currently available is in the whitepaper, or scattered in discord conversations.
 
