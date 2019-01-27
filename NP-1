@@ -1,4 +1,19 @@
-Write me ☺
+# NIP-1: Nominal fee for address creation
 
+## Introduction
+
+Nyzo uses a combination of two approaches to maintain historical state; individual blocks, and balance lists that represent holdings for individual accounts. Block-wise, balances are represented by SHA256 hashes of the balance list; thus increasing the number of addresses would not affect block size. However, they would affect the size of the balance list, which leads to the possibility of spam attacks that create many addresses to increase resource expenditures. Given the current state of the chain, these attacks are possible, and probably also inexpensive. 
+
+## Definitions
+
+**New address**: a public key without any previous incoming (manual or seed) transactions and a balance of zero
+**In-cycle verifier**: a verifier in the mesh that is producing/transmitting blocks
+**cyclesize**: the number of in-cycle verifiers current in the mesh
+
+## Proposal
+
+- Calculate “address creation fee” as 0.01%/(cyclesize) of the current circulating supply
+- When sending to new address, check that the sent amount is greater than the address creation fee. If so, deduct the fee from the amount. If not, verifiers will not accept the transaction
+- The address creation fee is then paid to the current in cycle verifier and to the previous 9 verifiers in the mesh (1/10 to each) - this could be structured as an automatic conditional payment from the new address, or the old address
 
 Current Nyzo version: 489
